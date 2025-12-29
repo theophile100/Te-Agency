@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE AGENCY - Onboarding TikTok</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2139 0%, #2d4563 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d4563;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1f2139;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(45, 69, 99, 0.1);
+            color: #2d4563;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .features li {
+            padding: 10px 0;
+            color: #333;
+            font-size: 14px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li:last-child {
+            border-bottom: none;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #2d4563;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2d4563 0%, #1f2139 100%);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(45, 69, 99, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 20px;
+        }
+
+        .agency-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 14px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TE AGENCY</div>
+        
+        <div class="title">Ton identité TikTok t'attend</div>
+        
+        <div class="subtitle">Transforme ta présence en plateforme générant des clients et des revenus</div>
+
+        <span class="badge">Accès immédiat</span>
+
+        <ul class="features">
+            <li>Audit & positionnement clair</li>
+            <li>Plan d'action 7 jours</li>
+            <li>Accompagnement automatisé WhatsApp</li>
+            <li>Support réactif</li>
+        </ul>
+
+        <div class="agency-info">
+            ✨ Agence spécialisée en création d'identité TikTok et personal branding pour créateurs, entrepreneurs et petits business.
+        </div>
+
+        <a href="https://wa.me/22899895531?text=START" target="_blank" class="cta-button">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.579 0-3.051.46-4.315 1.332l-.31-.156-3.22.848.86-3.144-.202-.322C2.704 6.859 2.149 5.684 2.149 4.38 2.149 1.759 4.253 0 6.925 0c1.846 0 3.563.822 4.7 2.134 1.137 1.312 1.763 3.055 1.763 4.892 0 2.621-2.104 4.752-4.672 4.752" />
+            </svg>
+            Démarrer sur WhatsApp
+        </a>
+
+        <div class="footer">
+            Livraison immédiate après achat • Support réactif 24/7
+        </div>
+    </div>
+</body>
+</html>
